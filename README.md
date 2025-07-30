@@ -52,11 +52,14 @@ To run this app locally, follow these steps:
 
 Install the required libraries:
 
+```
 pip install streamlit pandas plotly scikit-learn openpyxl
-
+```
 Run the Streamlit app:
 
+```
 streamlit run bt_analysis_app.py
+```
 
 The dashboard will open in your default web browser.
 
