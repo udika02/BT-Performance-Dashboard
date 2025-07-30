@@ -70,8 +70,7 @@ The dashboard will open in your default web browser.
 <img width="1741" height="707" alt="BT_Level Graph" src="https://github.com/user-attachments/assets/7469c719-ff91-4091-b935-d061a8686817" />
 
 
-# 🌐 Live Demo
-You can explore a hosted version of this app at:
+S
 
 
 
