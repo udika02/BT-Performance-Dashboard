@@ -1,89 +1,77 @@
-📘 IISU BT Performance Dashboard
-An interactive Streamlit application designed for evaluating and visualizing student performance using Bloom’s Taxonomy (BT). The app enables detailed analysis of weekly and monthly academic trends, integrates machine learning for predictive insights, and classifies question papers by cognitive levels.
+# 📘 IISU BT Performance Dashboard
+A powerful and interactive web application to analyze student performance using Bloom’s Taxonomy (BT) and generate insights through machine learning and visual reporting.
 
-🔍 Overview
-This dashboard offers educators, institutions, and curriculum designers a powerful tool to:
+# 📖 Introduction
+The BT Performance Dashboard is a user-friendly, Streamlit-powered web tool designed to assist educators and academic institutions in evaluating student outcomes at various Bloom’s Taxonomy levels. It simplifies the process of tracking cognitive-level progress, analyzing question paper complexity, and predicting future academic performance — all based on weekly and monthly data inputs.
 
-Track student performance across BT levels.
+# ✅ Features
+Upload and analyze weekly student scores by BT levels.
 
-Predict monthly academic outcomes using machine learning.
+Upload monthly performance data across four weeks.
 
-Automatically classify and evaluate question papers for cognitive load.
+Visualize trends using interactive charts.
 
-🚀 Key Features
-🗓 Weekly BT-Level Performance
-Upload weekly student assessments.
+Predict next month’s academic label using ML-based predictions.
 
-Automatic calculation of accuracy per BT level.
+Classify question papers into BT levels automatically.
 
-Visual and tabular summaries.
+Evaluate question paper cognitive load based on BT scoring.
 
-📊 Monthly Analysis + ML Prediction
-Analyze 4-week performance trends.
+Download results and BT-tagged question sheets.
 
-Predict next-month performance using Random Forest Classifier.
+Receive personalized recommendations for students based on performance.
 
-Generate student-specific recommendations based on accuracy trends and model outcomes.
+# 🧠 About BT Levels
+The app follows Bloom’s Taxonomy to classify student tasks/questions into six levels:
 
-🧠 Question Paper Analysis
-Automatically classify questions using BT-level keywords.
+Remember – recall facts, definitions
 
-Compute BT scores and evaluate overall cognitive load.
+Understand – explain concepts, describe processes
 
-Visual summaries and downloadable tagged files.
+Apply – solve problems, use information in new ways
 
-📂 Expected File Formats
-File	                         Purpose	                       Key Columns
-Weekly_report.xlsx	           Weekly student marks	           Student, Week_Date, Q1 to Q10
-Monthly_report.xlsx     	     Combined 4-week report	         Student, Month, W1_Q1 to W4_Q10, Monthly_Label (optional)
-ML_BT_Level_Questions.xlsx	   Question paper tagging	         Question Text, BT_Level (optional)
+Analyze – differentiate, examine relationships
 
-⚙️ Getting Started
-Prerequisites
-Ensure Python ≥ 3.7 is installed. Install dependencies via:
+Evaluate – critique, justify decisions
 
-bash
-Copy
-Edit
+Create – design, produce original work
+
+Each level is assigned a weighted score to quantify learning depth.
+
+# 📁 File Input Details
+The dashboard supports three types of Excel files:
+
+Weekly Report – Contains one week’s performance (Q1 to Q10).
+
+Monthly Report – Combines 4-week data with optional performance label.
+
+Question Paper File – Contains question text with optional BT levels.
+
+# 🚀 Getting Started
+To run this app locally, follow these steps:
+
+Install the required libraries:
+
 pip install streamlit pandas plotly scikit-learn openpyxl
-Running the Application
-bash
-Copy
-Edit
+
+Run the Streamlit app:
+
 streamlit run bt_analysis_app.py
-🧠 BT Level Classification Logic
-BT Level	Common Action Verbs	Score
-Remember	define, list, state, name	5
-Understand	explain, describe, summarize	5
-Apply	apply, use, solve	10
-Analyze	analyze, differentiate, compare	10
-Evaluate	evaluate, justify, critique	20
-Create	create, design, develop	20
 
-📈 Cognitive Load Interpretation
-Total BT Score	Interpretation	Indicator
-≥ 150	High-Order Focused	🟢
-100 – 149	Balanced Cognitive Load	🟡
-< 100	Low Cognitive Load	🔴
+The dashboard will open in your default web browser.
 
-🛠 Tech Stack
-Frontend: Streamlit
+# 📸 Preview
 
-Backend/Data: Python, pandas, scikit-learn
+<img width="1777" height="673" alt="image" src="https://github.com/user-attachments/assets/1c75bd73-7d04-4073-9b91-13c493571aaa" />
 
-Visualization: Plotly
+<img width="1741" height="707" alt="BT_Level Graph" src="https://github.com/user-attachments/assets/7469c719-ff91-4091-b935-d061a8686817" />
 
-File Handling: openpyxl
 
-📎 Sample Use Cases
-Academic performance monitoring
+# 🌐 Live Demo
+You can explore a hosted version of this app at:
+https://bt-performance-dashboard.vercel.app
 
-Automated Bloom’s Taxonomy classification
 
-Question paper quality assurance
-
-Adaptive support recommendations for students
-
-📬 Contact & Contributions
-For feature requests, bugs, or contributions, please open an issue or submit a pull request on GitHub.
+# 🤝 Contributing
+Contributions are welcome! If you’d like to improve this project—whether it’s fixing bugs, enhancing features, or improving UI—feel free to fork the repository and create a pull request.
 
