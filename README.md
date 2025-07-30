@@ -72,7 +72,7 @@ The dashboard will open in your default web browser.
 
 # 🌐 Live Demo
 You can explore a hosted version of this app at:
-https://bt-performance-dashboard.vercel.app
+
 
 
 # 🤝 Contributing
